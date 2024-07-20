@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --pink:#EC5598;
+    --black:#767676;
+    --brown:#4B3941;
+    --white:#ffff;
+
+}
+
+
+* {
+    font-family:  "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ h1{
+    color: var(--pink);
+    text-align: center;
+    border: 4px solid #767676;
+}
+.calculator{
+    background-color: var(--pink);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--white);
+}
+.calculator form input{
+    /* padding: 5px;
+    border: 2px solid #e3f9ff;
+    border-radius: 3px; */
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+display: flex;
+justify-content: flex-end;
+margin: 20px 0;
+background-color: white;
+    color: var(--black);
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    background-color: white;
+    color: var(--black);
+}
+form input.equal{
+width: 145px;
+}
+form input.operator{
+   color: aqua;
+}
